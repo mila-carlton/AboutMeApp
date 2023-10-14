@@ -88,7 +88,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="33" translatesAutoresizingMaskIntoConstraints="NO" id="A4f-bI-IYT">
-                                <rect key="frame" x="189" y="338" width="41.333333333333343" height="233.66666666666663"/>
+                                <rect key="frame" x="301.66666666666669" y="338" width="41.333333333333314" height="233.66666666666663"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MrP-HU-246">
                                         <rect key="frame" x="0.0" y="0.0" width="41.333333333333336" height="20.333333333333332"/>
@@ -123,10 +123,10 @@
                                 </subviews>
                             </stackView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9gR-gC-43x">
-                                <rect key="frame" x="126.66666666666669" y="135" width="140" height="140"/>
+                                <rect key="frame" x="146.66666666666666" y="139" width="100" height="100"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="140" id="7n1-vp-2kX"/>
-                                    <constraint firstAttribute="width" constant="140" id="wLa-3L-qqJ"/>
+                                    <constraint firstAttribute="height" constant="100" id="WAw-yu-Ezp"/>
+                                    <constraint firstAttribute="width" constant="100" id="clI-ty-7VD"/>
                                 </constraints>
                             </imageView>
                         </subviews>
@@ -135,10 +135,10 @@
                         <constraints>
                             <constraint firstItem="NNz-Yu-r9w" firstAttribute="leading" secondItem="kfw-Vu-BZC" secondAttribute="leading" constant="45" id="3wy-E1-wyZ"/>
                             <constraint firstItem="kfw-Vu-BZC" firstAttribute="bottom" secondItem="A4f-bI-IYT" secondAttribute="bottom" constant="148.33000000000001" id="3y8-Vr-Tan"/>
-                            <constraint firstItem="kfw-Vu-BZC" firstAttribute="trailing" secondItem="A4f-bI-IYT" secondAttribute="trailing" constant="162.66999999999999" id="5N8-4g-46a"/>
-                            <constraint firstItem="9gR-gC-43x" firstAttribute="centerX" secondItem="hcn-GH-p1e" secondAttribute="centerX" id="Dqh-yt-MnA"/>
-                            <constraint firstItem="9gR-gC-43x" firstAttribute="top" secondItem="hcn-GH-p1e" secondAttribute="top" constant="135" id="Ej1-gh-CGT"/>
+                            <constraint firstItem="kfw-Vu-BZC" firstAttribute="trailing" secondItem="A4f-bI-IYT" secondAttribute="trailing" constant="50" id="Q1L-BY-u0W"/>
                             <constraint firstItem="kfw-Vu-BZC" firstAttribute="bottom" secondItem="NNz-Yu-r9w" secondAttribute="bottom" constant="147" id="gHS-0Z-KIi"/>
+                            <constraint firstItem="9gR-gC-43x" firstAttribute="top" secondItem="hcn-GH-p1e" secondAttribute="top" constant="139" id="kJR-EF-mJO"/>
+                            <constraint firstItem="9gR-gC-43x" firstAttribute="centerX" secondItem="hcn-GH-p1e" secondAttribute="centerX" id="scd-HP-AcC"/>
                         </constraints>
                     </view>
                     <toolbarItems/>
@@ -150,6 +150,14 @@
                         </barButtonItem>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="companyLabel" destination="8j3-bV-e7k" id="ObG-QJ-0Lx"/>
+                        <outlet property="departmentLabel" destination="sLz-ZN-rIr" id="8Ax-cC-KtC"/>
+                        <outlet property="myImage" destination="9gR-gC-43x" id="R8x-gs-HQ5"/>
+                        <outlet property="nameLabel" destination="MrP-HU-246" id="qMr-BN-EjR"/>
+                        <outlet property="positionLabel" destination="z6k-r1-gbF" id="o6M-5V-LMR"/>
+                        <outlet property="surnameLabel" destination="gxj-eJ-Y7r" id="wz4-iU-xiu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="i3Q-XK-rPb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -164,24 +172,29 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8xU-iG-7Pg">
-                                <rect key="frame" x="176" y="202" width="41.333333333333343" height="20.333333333333343"/>
+                                <rect key="frame" x="53" y="207" width="284" height="340"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="0b7-LL-1m3"/>
                         <color key="backgroundColor" red="0.70732734450000001" green="0.69963997879999995" blue="0.84258943799999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="8xU-iG-7Pg" firstAttribute="centerX" secondItem="1rD-IW-Rq5" secondAttribute="centerX" id="PsK-ik-mmy"/>
-                            <constraint firstItem="8xU-iG-7Pg" firstAttribute="top" secondItem="0b7-LL-1m3" secondAttribute="top" constant="47" id="RG1-m9-m1e"/>
+                            <constraint firstItem="0b7-LL-1m3" firstAttribute="bottom" secondItem="8xU-iG-7Pg" secondAttribute="bottom" constant="173" id="I81-YL-YXm"/>
+                            <constraint firstItem="0b7-LL-1m3" firstAttribute="trailing" secondItem="8xU-iG-7Pg" secondAttribute="trailing" constant="56" id="hU7-No-UST"/>
+                            <constraint firstItem="8xU-iG-7Pg" firstAttribute="leading" secondItem="0b7-LL-1m3" secondAttribute="leading" constant="53" id="hr0-37-V8M"/>
+                            <constraint firstItem="8xU-iG-7Pg" firstAttribute="top" secondItem="0b7-LL-1m3" secondAttribute="top" constant="52" id="kER-KB-UKj"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="pOB-UE-wBt"/>
+                    <connections>
+                        <outlet property="bioLabel" destination="8xU-iG-7Pg" id="ODk-Bc-t6N"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FWs-YU-jxT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2039" y="292"/>
+            <point key="canvasLocation" x="2038.9312977099237" y="290.84507042253523"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="tpG-ZK-9qR">
@@ -189,6 +202,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="WZM-sM-iI8" customClass="TabBarController" customModule="AboutMe" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="mcb-Es-OdJ">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
@@ -201,11 +215,11 @@
             </objects>
             <point key="canvasLocation" x="-673" y="-427"/>
         </scene>
-        <!--Item-->
+        <!--Me-->
         <scene sceneID="IKK-AK-m32">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="oVA-zb-vvS" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="um3-i4-6zZ"/>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="oVA-zb-vvS" customClass="NewNavigationController" customModule="AboutMe" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Me" image="person.fill" catalog="system" id="um3-i4-6zZ"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="qTS-ti-6NB">
                         <rect key="frame" x="0.0" y="59" width="393" height="96"/>
@@ -223,6 +237,7 @@
     </scenes>
     <resources>
         <image name="house.fill" catalog="system" width="128" height="104"/>
+        <image name="person.fill" catalog="system" width="128" height="120"/>
         <image name="person.fill.checkmark" catalog="system" width="128" height="89"/>
     </resources>
 </document>

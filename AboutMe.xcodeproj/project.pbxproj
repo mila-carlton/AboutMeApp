@@ -17,6 +17,7 @@
 		652580292AD9AE5C002032D6 /* BioNavViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652580282AD9AE5C002032D6 /* BioNavViewController.swift */; };
 		6525802B2AD9B520002032D6 /* InfoNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6525802A2AD9B520002032D6 /* InfoNavigationController.swift */; };
 		6525802D2AD9B7CE002032D6 /* AboutMeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6525802C2AD9B7CE002032D6 /* AboutMeModel.swift */; };
+		6525802F2ADAB146002032D6 /* NewNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6525802E2ADAB146002032D6 /* NewNavigationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		652580282AD9AE5C002032D6 /* BioNavViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BioNavViewController.swift; sourceTree = "<group>"; };
 		6525802A2AD9B520002032D6 /* InfoNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoNavigationController.swift; sourceTree = "<group>"; };
 		6525802C2AD9B7CE002032D6 /* AboutMeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutMeModel.swift; sourceTree = "<group>"; };
+		6525802E2ADAB146002032D6 /* NewNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewNavigationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,10 +68,7 @@
 			children = (
 				6525800C2AD99CB5002032D6 /* AppDelegate.swift */,
 				6525800E2AD99CB5002032D6 /* SceneDelegate.swift */,
-				652580242AD9AD66002032D6 /* TabBarController.swift */,
-				652580102AD99CB5002032D6 /* WelcomeViewController.swift */,
-				6525802A2AD9B520002032D6 /* InfoNavigationController.swift */,
-				652580282AD9AE5C002032D6 /* BioNavViewController.swift */,
+				652580312ADAB8D3002032D6 /* viewControllers */,
 				6525802C2AD9B7CE002032D6 /* AboutMeModel.swift */,
 				652580122AD99CB5002032D6 /* Main.storyboard */,
 				652580152AD99CB6002032D6 /* Assets.xcassets */,
@@ -77,6 +76,18 @@
 				6525801A2AD99CB6002032D6 /* Info.plist */,
 			);
 			path = AboutMe;
+			sourceTree = "<group>";
+		};
+		652580312ADAB8D3002032D6 /* viewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				652580242AD9AD66002032D6 /* TabBarController.swift */,
+				652580102AD99CB5002032D6 /* WelcomeViewController.swift */,
+				6525802E2ADAB146002032D6 /* NewNavigationController.swift */,
+				6525802A2AD9B520002032D6 /* InfoNavigationController.swift */,
+				652580282AD9AE5C002032D6 /* BioNavViewController.swift */,
+			);
+			path = viewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -156,6 +167,7 @@
 				6525802D2AD9B7CE002032D6 /* AboutMeModel.swift in Sources */,
 				6525800D2AD99CB5002032D6 /* AppDelegate.swift in Sources */,
 				652580252AD9AD66002032D6 /* TabBarController.swift in Sources */,
+				6525802F2ADAB146002032D6 /* NewNavigationController.swift in Sources */,
 				6525800F2AD99CB5002032D6 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

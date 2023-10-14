@@ -7,14 +7,16 @@
 
 import UIKit
 
-class BioNavViewController: UINavigationController {
+final class BioNavViewController: UIViewController {
 
+    @IBOutlet weak var bioLabel: UILabel!
+    
+    var person: Person!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        bioLabel.text = person.bio
     }
     
-
-    var person: Person!
 }
