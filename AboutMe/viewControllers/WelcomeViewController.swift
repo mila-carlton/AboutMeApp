@@ -11,12 +11,5 @@ final class WelcomeViewController: UIViewController {
 
     var person: Person!
     var company: Company!
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
-    }
-    
-
 }
 

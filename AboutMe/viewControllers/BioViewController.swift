@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class BioNavViewController: UIViewController {
+final class BioViewController: UIViewController {
 
     @IBOutlet weak var bioLabel: UILabel!
     

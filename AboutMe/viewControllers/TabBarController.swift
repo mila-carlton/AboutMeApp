@@ -17,7 +17,6 @@ final class TabBarController: UITabBarController {
         let appearance = UITabBarAppearance()
         tabBar.standardAppearance = appearance
         tabBar.scrollEdgeAppearance = appearance
-        title = person.name
         transferData()
     }
     
@@ -30,7 +29,7 @@ final class TabBarController: UITabBarController {
                 welcomeVc.company = company
             } else if let navigationVC = $0 as? NewNavigationController {
                 let userInfoVC = navigationVC.topViewController
-                guard let userInfoVC = userInfoVC as? InfoNavigationController else { return }
+                guard let userInfoVC = userInfoVC as? InfoViewController else { return }
                 userInfoVC.person = person
                 userInfoVC.company = company
             }
